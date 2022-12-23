@@ -1,0 +1,108 @@
+.table {
+  padding: 1rem;
+  padding-top: 5rem;
+  .biological-hazard-title {
+    text-decoration: underline;
+    color: #4ba8f9;
+  }
+
+  .mantine-1n3n130 thead tr th,
+  .mantine-1n3n130 tfoot tr th {
+    padding: 0.6rem 1.6rem;
+  }
+  .mantine-ye2q1m {
+    width: 8rem;
+  }
+  .mantine-rum3t1 {
+    width: 6.4rem;
+    margin-top: 1.7rem;
+    padding-right: 1rem;
+  }
+  .error {
+    color: #e50707;
+  }
+  .units {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      padding-left: 0.5rem;
+      text-align: center;
+      padding-top: 2rem;
+    }
+  }
+  .mantine-Checkbox-input {
+    padding-top: 0.7rem;
+  }
+  .mantine-Checkbox-input,
+  .icon {
+    cursor: pointer;
+  }
+  .icon {
+    font-size: 1.3rem;
+  }
+  .action-icons {
+    display: flex;
+    align-items: center;
+    .add-icon {
+      color: rgb(12, 156, 12);
+      margin-top: 1.4rem;
+    }
+    .remove-icon {
+      color: #ff0000;
+      margin-top: 1.4rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .process {
+    &__content {
+      display: flex;
+      align-items: center;
+    }
+    .mantine-ye2q1m {
+      margin-top: 0rem;
+    }
+    .process-icon {
+      color: #4ba8f9;
+    }
+  }
+  .mantine-ye2q1m,
+  .mantine-8nr514 {
+    margin-top: 2rem;
+  }
+  .mantine-l553vn {
+    .modal-button {
+      display: flex !important;
+      justify-content: flex-end !important;
+      align-items: flex-end;
+    }
+  }
+  .mantine-1n3n130 {
+    background-color: #fff;
+    position: sticky;
+    right: 0rem;
+  }
+  .sticky-component {
+    background-color: #fff;
+    position: sticky;
+    right: 0rem;
+    box-shadow: inset 4px 0 8px -8px rgb(0 0 0 / 40%);
+  }
+  .mantine-1n3n130 tbody tr td {
+    padding: 0.65rem;
+  }
+  .mantine-1n3n130 {
+    thead,
+    .sticky-header {
+      background: rgb(250 250 250);
+    }
+  }
+  .mantine-qb3vl4 {
+    .mantine-l553vn {
+      .title {
+        display: flex;
+      }
+    }
+  }
+}

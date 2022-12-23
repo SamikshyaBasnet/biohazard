@@ -1,0 +1,31 @@
+.header {
+  background-color: #fff1;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 4px 14px rgba(33, 29, 79, 0.1);
+  background-color: #fff;
+  z-index: 1;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  h1 {
+    color: #4ba8f9;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  .username {
+    margin-right: 1rem;
+  }
+  .image {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
