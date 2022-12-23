@@ -17,7 +17,7 @@ const iconWrapperStyle = {
   borderRadius: '50%',
   border: '0.2rem solid green',
 }
-// const iconStyle = {}
+
 const SuccessModal = ({ opened, setOpened }: SuccessModalProps) => {
   return (
     <Modal opened={opened} onClose={() => setOpened(false)} className="modal">

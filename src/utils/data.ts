@@ -1,5 +1,4 @@
 import { nanoid } from 'nanoid'
-import { ReactNode } from 'react'
 import bioHazards from '../data/data.json'
 
 const COLUMN_NAMES = [
@@ -22,10 +21,6 @@ type TDataSource = Record<Lowercase<typeof COLUMN_NAMES[number]>, any> & {
   key: string
 }
 
-interface ID {
-  ingredient_id: string
-  category_id: string
-}
 const DATA_SOURCE: TDataSource[] = bioHazards.map((bioHazard, index) => {
   const id = nanoid()
   return {
@@ -91,4 +86,9 @@ const INTERVAL_SELECT_OPTIONS = [
   },
 ]
 export type { TDataSource }
-export { COLUMN_NAMES, DATA_SOURCE, PROCESS_SELECT_OPTIONS, INTERVAL_SELECT_OPTIONS }
+export {
+  COLUMN_NAMES,
+  DATA_SOURCE,
+  PROCESS_SELECT_OPTIONS,
+  INTERVAL_SELECT_OPTIONS,
+}

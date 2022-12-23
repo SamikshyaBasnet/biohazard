@@ -24,10 +24,6 @@ const BiologicalHazard: React.FC = () => {
     const row = dataSource.find((data) => data.key === rowKey)
     if (row === undefined) throw new Error('Row not found')
     const rowIndex = parseInt(row.key, 10)
-    console.log(
-      '🚀 ~ file: BiologicalHazardTable.tsx:35 ~ findRowByKey ~ rowIndex',
-      rowIndex,
-    )
     return { row, rowIndex }
   }
 
@@ -102,7 +98,7 @@ const BiologicalHazard: React.FC = () => {
                 getFieldProps,
                 setFieldTouched,
               }) => {
-                const isSameAsPrevious = (key: keyof TDataSource) => {
+                const isOfSameType = (key: keyof TDataSource) => {
                   return index > 0
                     ? dataSource[index - 1][key] === element[key]
                       ? ''
@@ -111,9 +107,9 @@ const BiologicalHazard: React.FC = () => {
                 }
                 return (
                   <tr key={element.key}>
-                    <td>{isSameAsPrevious('ingredient name')}</td>
-                    <td>{isSameAsPrevious('category')}</td>
-                    <td>{isSameAsPrevious('sub category')}</td>
+                    <td>{isOfSameType('ingredient name')}</td>
+                    <td>{isOfSameType('category')}</td>
+                    <td>{isOfSameType('sub category')}</td>
                     <td className="biological-hazard-title">
                       {element['biological hazard']}
                     </td>
