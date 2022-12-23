@@ -7,10 +7,12 @@ const degreeValidate = Yup.number()
   .min(160, 'Please enter the value between 160 and 180')
   .max(180, 'Please enter the value between 160 and 180')
 
-const requiredStringValidate = Yup.string().required('This field is required')
+const requiredStringValidate = Yup.string().required(
+  'This is a required field. Please fill it.',
+)
 const requiredNumberValidate = Yup.number()
   .min(1)
-  .required('This field is required')
+  .required('This is a required field. Please fill it.')
 
 export const bioHazardValidation = Yup.object().shape({
   min_unit: degreeValidate,
